@@ -11,11 +11,13 @@ public class Weather {
     double temp;
     double wind;
     double precipChance;
+    double variance;
 
-    Weather(double t, double w, double p) {
+    Weather(double t, double w, double p, double v) {
         averageTemp = t;
         averageWind = w;
         averagePrecipChance = p;
+        variance = v;
     }
 
     public double getAverageTemp() {

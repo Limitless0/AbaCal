@@ -4,16 +4,16 @@ import java.io.Serializable;
 
 public class Calendar implements Serializable {
     int day = 0;
-    static int weekLength; //in days
+    int weekLength; //in days
     int week = 0;
-    static int monthLength; //in weeks
+    int monthLength; //in weeks
     int month = 0;
-    static int seasonLength; // in months
+    int seasonLength; // in months
     int season = 0;
-    static int yearLength; //in seasons
+    int yearLength; //in seasons
     int year = 0;
-    static int daysInYear = 0;
-    static int daysInSeason = 0;
+    int daysInYear = 0;
+    int daysInSeason = 0;
 
     public Calendar(int weekLen, int monthLen, int seasonLen, int yearLen) {
         weekLength = weekLen; //in days

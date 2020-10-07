@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.control.Label;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -18,13 +19,10 @@ public class AbaCal extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getClassLoader().getResource("AbaCal.fxml")));
         primaryStage.setTitle("Hello World");
-        if (root != null) {
-            primaryStage.setScene(new Scene(root, 300, 275));
-        } else {
-            return;
-        }
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("AbaCal.fxml"));
+        Scene scene = new Scene(root, 300, 275);
+        primaryStage.setScene(scene);
         primaryStage.show();
 
     }

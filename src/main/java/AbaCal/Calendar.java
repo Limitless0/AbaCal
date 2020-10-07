@@ -1,6 +1,8 @@
 package AbaCal;
 
-public class Calendar {
+import java.io.Serializable;
+
+public class Calendar implements Serializable {
     int day = 0;
     static int weekLength; //in days
     int week = 0;
